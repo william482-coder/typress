@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.draggable {
+  -webkit-app-region: drag;
+}
+.draggable-none {
+  -webkit-app-region: no-drag;
+}

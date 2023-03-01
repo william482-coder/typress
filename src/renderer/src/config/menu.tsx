@@ -1,7 +1,9 @@
 import App from '@renderer/App'
 import { Error } from '@renderer/Error'
+import { Board } from '@renderer/features/board/Board'
 import { Calender } from '@renderer/features/calender/Calender'
 import { Home } from '@renderer/features/home/Home'
+import { Note } from '@renderer/features/note/Note'
 import { Performance } from '@renderer/features/performance/Performance'
 import { Setting } from '@renderer/features/setting/Setting'
 import { Timer } from '@renderer/features/timer/Timer'
@@ -35,6 +37,12 @@ export const MenuList: TMenu[] = [
     errorElement: <Error />
   },
   {
+    label: 'Board',
+    path: '/board',
+    element: <Board />,
+    errorElement: <Error />
+  },
+  {
     label: 'Calender',
     path: '/calender',
     element: <Calender />,
@@ -47,8 +55,14 @@ export const MenuList: TMenu[] = [
     errorElement: <Error />
   },
   {
+    label: 'Note',
+    path: '/note',
+    element: <Note />,
+    errorElement: <Error />
+  },
+  {
     label: 'Setting',
-    path: '/Setting',
+    path: '/setting',
     element: <Setting />,
     errorElement: <Error />
   }
